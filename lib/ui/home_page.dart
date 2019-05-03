@@ -135,17 +135,29 @@ class HomePage extends StatelessWidget {
   }
 
   Widget chartWidget() {
-    return Padding(
-      padding: const EdgeInsets.only(left: 32.0, top: 24.0, right: 16.0),
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
-        children: <Widget>[
-          Text("Days",style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold),),
-          SizedBox(width: 16.0,),
-          Text("Months",style: TextStyle(color: Colors.white,fontSize: 20.0)),
-          Expanded(child: Text("(visit in mins)",textAlign:TextAlign.end,style: TextStyle(color: Colors.white.withOpacity(0.7),fontSize: 15.0)))
-        ],
-      ),
+    return Column(
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.only(left: 32.0, top: 24.0, right: 16.0),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Text("Days",style: TextStyle(color: Colors.white,fontSize: 20.0,fontWeight: FontWeight.bold),),
+              SizedBox(width: 16.0,),
+              Text("Months",style: TextStyle(color: Colors.white,fontSize: 20.0)),
+              Expanded(child: Text("(visit in mins)",textAlign:TextAlign.end,style: TextStyle(color: Colors.white.withOpacity(0.7),fontSize: 15.0)))
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            width: double.infinity,
+            height: 150.0,
+            color: Colors.black12,
+          ),
+        )
+      ],
     );
   }
 
