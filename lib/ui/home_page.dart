@@ -42,14 +42,14 @@ Widget Bar() {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40.0),
               color: Colors.green.withOpacity(0.3)),
-          child: MaterialButton(child: buttonFirends()),
+          child: MaterialButton(child: buttonFriends()),
         ),
       )
     ],
   );
 }
 
-Widget buttonFirends() {
+Widget buttonFriends() {
   return Row(
     children: <Widget>[
       Icon(
